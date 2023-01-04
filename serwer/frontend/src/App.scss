@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro&display=swap');
+  // font-family: 'Playfair Display', serif;
+  // font-family: 'Source Sans Pro', sans-serif;
+
+// COMMON LAYOUT PARTS (body, section, header, footer)
+body {
+  min-height: calc(100vh - 84px);
+  margin-bottom: 84px;
+}
+
+section {
+  margin: 0 1rem;
+  text-align: center;
+
+  header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    border-bottom: 1px solid #002846;
+
+    .header_title {
+        font: 2rem/2rem 'Playfair Display', serif;
+        margin: 16px 0 8px 0;
+        text-align: left;
+    }
+
+    .header_buttons {
+        margin: 16px 0 8px 0;
+        box-sizing: inherit;
+        // width: 288px;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            border: 2px solid #002846;
+            background-color: inherit;
+            font: 24px/24px 'Source Sans Pro', sans-serif;
+            min-width: 6rem;
+            padding: 2px 8px;
+
+            &:first-child {
+                margin-right: 2rem;
+            }
+        }
+    }
+  }
+
+  @media (min-width: 540px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  }
+
+  .error_display {
+    color: #aa2f2f;
+    margin-top: 1rem;
+    min-height: 1rem;
+    font: 1rem/1rem 'Source Sans Pro', sans-serif;
+  }
+}
+
+footer {
+  text-align: center;
+  box-sizing: border-box;
+  width: calc(100vw - 2rem);
+  position: fixed;
+  bottom: 0;
+  padding: 1rem;
+  margin: 0 1rem;
+  border-top: 1px solid #002846;
+  background-color: white;
+
+  h3 {
+    margin: 8px;
+    font: 20px/20px 'Playfair Display', serif;
+  }
+
+  p {
+    margin: 0;
+    font: 1rem/1rem 'Source Sans Pro', sans-serif;
+  }
+}

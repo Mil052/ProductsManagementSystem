@@ -1,0 +1,42 @@
+// COMMON LAYOUT PARTS FOR ALL PAGES (body, section, header, footer) ARE IN '../App.scss' FILE 
+.product-list {
+    margin: 0;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 14rem);
+    list-style: none;
+    justify-content: center;
+    gap: 1rem;
+
+    .product-list__item {
+        height: 14rem;
+        padding: 8px;
+        border: 1px solid #002846;
+        border-radius: 8px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        input[type="checkbox"] {
+            display: block;
+            align-self: flex-start;
+        }
+
+        h3 {
+            font: 20px/24px 'Playfair Display', serif;
+            height: 3rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;          
+        }
+        
+        h4 {
+            font: 18px/18px 'Source Sans Pro', sans-serif;
+            margin: 12px 0;
+        }
+
+    }
+}

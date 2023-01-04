@@ -1,0 +1,12 @@
+###START MOD_REWRITE
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteRule ^api(/.*)?$ server/index.php$1 [L,END]
+    RewriteRule ^add-products$ frontend/build/index.html [L,END]
+    RewriteRule ^(.+)$ frontend/build/$1 [L,END]
+    RewriteRule ^$ frontend/build/index.html [L,END]
+
+</IfModule>
+###END MOD_REWRITE
