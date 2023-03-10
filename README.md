@@ -15,4 +15,4 @@ Backend is build in PHP.
 * Create the database (MySQL) and import products table from a file "products_scandiweb.sql"
 * In file "serwer/server/config.php" set the database connection credentials to your database.
 
-Alternatively You can just see the working app here: https://mgwebdevelopment.000webhostapp.com/
+Alternatively You can just see the working app here: https://mgwebdevelopment.000webhostapp.com/cms/
