@@ -16,4 +16,4 @@ Backend is build in PHP.
 * In file "serwer/server/config.php" set the database connection credentials to your database.
 
 Alternatively You can just see the working app here: \
-https://mgwebdevelopment.000webhostapp.com/cms/
+https://mgwebdevelopment.000webhostapp.com/cms
